@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _addn - addnodes 
+ * _addn - addnodes
  * @head: head
  * @n: new value
  * Return: void
@@ -16,9 +16,9 @@ void _addn(stack_t **head, int n)
 	{ printf("Error\n");
 		exit(0); }
 	if (tmp)
-    {
+	{
 		tmp->prev = newnode;
-    }
+	}
 	newnode->n = n;
 	newnode->next = *head;
 	newnode->prev = NULL;

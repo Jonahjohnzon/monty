@@ -20,9 +20,9 @@ void aqueue(stack_t **head, int n)
 	if (tmp)
 	{
 		while (tmp->next)
-        {
+		{
 			tmp = tmp->next;
-        }
+		}
 	}
 	if (!tmp)
 	{

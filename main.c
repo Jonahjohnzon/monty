@@ -1,9 +1,5 @@
 #include  "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 bus_t bus = {NULL, NULL, NULL, 0};
-
-
 /**
  * clearstack - free
  * @a: input
@@ -11,7 +7,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 void clearstack(stack_t *a)
 {
 	stack_t *tmp;
-	
+
 	tmp = a;
 	while (a)
 	{
@@ -21,6 +17,7 @@ void clearstack(stack_t *a)
 	}
 
 }
+
 /**
  * main - main entry
  * @argc: input
@@ -62,5 +59,5 @@ int main(int argc, char *argv[])
 	}
 	clearstack(stack);
 	fclose(file_out);
-	return(0);
+	return (0);
 }

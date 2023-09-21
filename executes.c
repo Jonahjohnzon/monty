@@ -3,7 +3,7 @@
 * execute - functin exec
 * @stack: linked head
 * @count: count
-* @file: input
+* @file_out: input
 * @line: line
 * Return: int
 */

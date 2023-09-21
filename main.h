@@ -22,7 +22,22 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
-
+/**
+ * struct bus_s - varible
+ * @arg: arg
+ * @file: pointer
+ * @content: line
+ * @lifi: flag
+ * Description: values
+ */
+typedef struct bus_s
+{
+	char *arg;
+	FILE *file;
+	char *content;
+	int lifi;
+}  bus_t;
+extern bus_t bus;
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -37,6 +52,8 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+int execute(char *line, stack_t **stack, unsigned int count, FILE *file_out);
 void clearstack(stack_t *a);
+void clearstack(stack_t *a);
+void stack_push(stack_t **head, unsigned int count);
 #endif

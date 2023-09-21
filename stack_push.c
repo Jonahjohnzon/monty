@@ -37,5 +37,5 @@ void stack_push(stack_t **head, unsigned int count)
 	if (bus.lifi == 0)
 		_addn(head, n);
 	else
-		addqueue(head, n);
+		aqueue(head, n);
 }

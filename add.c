@@ -17,7 +17,7 @@ void _addn(stack_t **head, int n)
 		exit(0); }
 	if (tmp)
     {
-		tmo->prev = newnode;
+		tmp->prev = newnode;
     }
 	newnode->n = n;
 	newnode->next = *head;

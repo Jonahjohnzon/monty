@@ -72,5 +72,7 @@ void fsub(stack_t **head, unsigned int count);
 void fmmod(stack_t **head, unsigned int count);
 void fpstr(stack_t **head, unsigned int count);
 void fpchar(stack_t **head, unsigned int count);
+void frotr(stack_t **head, __attribute__((unused)) unsigned int count);
+void frotl(stack_t **head, unsigned int count);
 void fmul(stack_t **head, unsigned int count);
 #endif

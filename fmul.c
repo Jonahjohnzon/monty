@@ -5,7 +5,7 @@
  * @count: count
  * Return: void
 */
-void f_mul(stack_t **head, unsigned int count)
+void fmul(stack_t **head, unsigned int count)
 {
 	stack_t *a;
 	int length = 0, tmp;

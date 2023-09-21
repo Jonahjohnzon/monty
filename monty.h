@@ -62,4 +62,5 @@ void _addn(stack_t **head, int n);
 void fqueue(stack_t **head, unsigned int count);
 void aqueue(stack_t **head, int n);
 void fpall(stack_t **head, unsigned int count);
+void fpint(stack_t **head, unsigned int count);
 #endif

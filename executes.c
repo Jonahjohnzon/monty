@@ -9,9 +9,9 @@
 */
 int execute(char *line, stack_t **stack, unsigned int count, FILE *file_out)
 {
-	instruction_t funct[] = {
-				{"push", stack_push},
-				{"pall", fpall},
+	instruction_t funct[] = { 
+				{"push", stack_push},{"pall", fpall},
+				{"pint", fpint},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

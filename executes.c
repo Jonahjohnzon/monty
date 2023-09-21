@@ -15,7 +15,8 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file_out)
 				{"pop", fpop},{"add", fadd},
 				{"nop", fnop},{"sub", fsub},
 				{"div", fdiv},{"mul", fmul},
-				{"mod", fmmod},
+				{"mod", fmmod},{"pstr", fpstr},
+				{"pchar", fpchar},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

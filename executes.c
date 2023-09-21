@@ -11,7 +11,8 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file_out)
 {
 	instruction_t funct[] = { 
 				{"push", stack_push},{"pall", fpall},
-				{"pint", fpint},
+				{"pint", fpint},{"swap", fswap},
+				{"pop", fpop},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

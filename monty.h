@@ -67,4 +67,6 @@ void fadd(stack_t **head, unsigned int count);
 void fswap(stack_t **head, unsigned int count);
 void fpop(stack_t **head, unsigned int count);
 void fnop(stack_t **head, unsigned int count);
+void fdiv(stack_t **head, unsigned int count);
+void fsub(stack_t **head, unsigned int count);
 #endif

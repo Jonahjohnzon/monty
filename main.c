@@ -1,5 +1,9 @@
 #include  "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 bus_t bus = {NULL, NULL, NULL, 0};
+
+
 /**
  * clearstack - free
  * @a: input
@@ -25,12 +29,12 @@ void clearstack(stack_t *a)
  */
 int main(int argc, char *argv[])
 {
+	char *line;
 	FILE *file_out;
-	ssize_t byt_size = 0;
+	size_t byt_size = 0;
 	ssize_t result = 1;
 	stack_t *stack = NULL;
 	unsigned int count = 0;
-	char *line;
 
 	if (argc != 2)
 	{
@@ -39,7 +43,7 @@ int main(int argc, char *argv[])
 	}
 	file_out = fopen(argv[1], "r");
 	bus.file = file_out;
-	if (file_out == NULL)
+	if (!file_out)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);

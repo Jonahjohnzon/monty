@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * aqueue - add /queue
- * @n: newvalue/
- * @head: stack head
+ * aqueue - add queue
+ * @n: newvalue
+ * @head: head
  * Return: void
 */
 void aqueue(stack_t **head, int n)

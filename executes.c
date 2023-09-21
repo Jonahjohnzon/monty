@@ -18,6 +18,8 @@ int execute(char *line, stack_t **stack, unsigned int count, FILE *file_out)
 				{"mod", fmmod},{"pstr", fpstr},
 				{"pchar", fpchar},{"rotl", frotl},
 				{"rotr", frotr},
+				{"queue", fqueue},
+				{"stack", fstack},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;
